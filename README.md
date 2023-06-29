@@ -18,8 +18,8 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ## Links
 
-- Solution GitHub:
-- Live Site URL:
+- Solution GitHub: https://github.com/Code-Beaker/order-sumary-component-code
+- Live Site URL: https://code-beaker.github.io/order-sumary-component-code/
 
 ## Process
 
