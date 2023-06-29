@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --size-para: 16px;
+
+  --weight-med: 500;
+  --weight-bold: 700;
+  --weight-bolder: 900;
+
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desat-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+  padding: 30px;
+  background: url("./img/pattern-background-desktop.svg");
+  background-size: cover;
+}
+
+.card {
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 20px;
+  background: #fff;
+  inset: 0;
+  margin: auto;
+  box-shadow: 6px 6px 12px var(--pale-blue);
+}
+
+.hero__image {
+  width: 100%;
+  height: 200px;
+  background: url("./img/illustration-hero.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  padding: 30px;
+}
+
+.plan-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--very-pale-blue);
+  padding: 10px 20px;
+  margin: 10px auto;
+  border-radius: 15px;
+}
+
+.plan-wrapper a {
+  color: var(--bright-blue);
+  font-weight: var(--weight-bold);
+  transition: 200ms ease-in;
+}
+
+.plan-wrapper a:hover {
+  opacity: 80%;
+  text-decoration: none;
+}
+
+.plan-name {
+  font-weight: var(--weight-bolder);
+  color: var(--dark-blue);
+}
+
+.card h2 {
+  margin: 20px auto;
+  color: var(--dark-blue);
+  font-weight: var(--weight-bolder);
+}
+
+.card p {
+  color: var(--desat-blue);
+}
+
+.button {
+  padding: 15px 30px;
+  display: block;
+  background: var(--bright-blue);
+  border-radius: 15px;
+  font-weight: var(--weight-bold);
+  color: var(--very-pale-blue);
+  text-decoration: none;
+  margin: 20px auto;
+  transition: 200ms ease-in;
+}
+
+.button:hover {
+  opacity: 80%;
+  box-shadow: 8px 8px 16px var(--pale-blue);
+}
+
+.cancel-link {
+  font-weight: var(--weight-bolder);
+  text-decoration: none;
+  color: var(--desat-blue);
+  transition: 200ms ease-in;
+}
+
+.cancel-link:hover {
+  color: var(--dark-blue);
+}
