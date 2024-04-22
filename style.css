@@ -22,14 +22,20 @@
 }
 
 .container {
-  padding: 30px;
-  background: url("./img/pattern-background-desktop.svg");
+  /* padding: 1rem; */
   background-size: cover;
+  background-image: url(img/pattern-background-desktop.svg), var(--bright-blue);
+  min-height: 100vh;
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-  width: 400px;
-  height: 600px;
+  max-width: 25rem;
+  max-height: auto;
   overflow: hidden;
   text-align: center;
   border-radius: 20px;
@@ -56,8 +62,8 @@ main {
   align-items: center;
   justify-content: space-between;
   background: var(--very-pale-blue);
-  padding: 10px 20px;
-  margin: 10px auto;
+  padding: 1rem 1.125rem;
+  margin: 0.5rem auto;
   border-radius: 15px;
 }
 
@@ -113,4 +119,26 @@ main {
 
 .cancel-link:hover {
   color: var(--dark-blue);
+}
+
+@media (width < 50rem) {
+  .card {
+    max-width: 20rem;
+  }
+
+  .plan-name {
+    font-size: 0.95rem;
+  }
+
+  .plan-amount {
+    font-size: 0.85rem;
+  }
+
+  .change-btn {
+    font-size: 0.95rem;
+  }
+
+  .music-icon {
+    max-width: 30px;
+  }
 }
